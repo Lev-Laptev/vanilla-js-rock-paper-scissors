@@ -1,3 +1,3 @@
 # rock-paper-scissors
  
-![img app](pngttps://ll-testing.ru/img-prodject/rock-paper.png)
+![img app](ttps://ll-testing.ru/img-prodject/rock-paper.png)
