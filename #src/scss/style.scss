@@ -1,0 +1,166 @@
+@import "reset.scss";
+
+$blue: #2c3e50;
+$white: #ffffff;
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    padding: 1rem 0;
+
+    font-family: 'Poppins', sans-serif;
+    color: $white;
+    text-align: center;
+
+    background-color: $blue;
+
+    &__header {
+        margin-bottom: 3rem;
+        padding: 1rem 1.8rem;
+
+        color: $blue;
+
+        background-color: $white;
+
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
+
+    &__message {
+        width: 200px;
+
+        margin: 0 2rem;
+
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        margin-bottom: 3rem;
+    }
+
+    &__show {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 1.5rem;
+
+        border: 5px solid $white;
+    
+        cursor: not-allowed;
+
+        img {
+            width: 200px;
+        }
+
+        p {
+            margin-top: 1rem;
+
+            font-weight: 600;
+        }
+    }
+
+    &__player {
+        &_1 {
+            img{
+                transform: rotate(90deg);
+            }
+        }
+
+        &_2 {
+            img{
+                transform: scaleX(-1) rotate(90deg);
+            }
+        }
+    }
+
+    &__animate {
+        &_1 {
+            animation-name: scaleAnimate1;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+        }
+        &_2 {
+            animation-name: scaleAnimate2;
+            animation-duration: 0.7s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 1.5rem;
+
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__option {
+        text-align: center;
+
+        span {
+            display: block;
+            
+            margin-top: 0.8rem;
+
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        img{
+            width: 100px;
+
+            margin: 0 1.2rem;
+
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all 300ms ease-in-out;
+
+            &:hover{
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    @keyframes scaleAnimate1{
+        0%{
+            transform: rotate(90deg) scale(1);
+        }
+        50%{
+            transform: rotate(90deg) scale(0.9);
+        }
+        100%{
+            transform: rotate(90deg) scale(1);
+        }
+    }
+
+    @keyframes scaleAnimate2{
+        0%{
+            transform: scaleX(-1) rotate(90deg) scale(1);
+        }
+        50%{
+            transform: scaleX(-1) rotate(90deg) scale(0.9);
+        }
+        100%{
+            transform: scaleX(-1) rotate(90deg) scale(1);
+        }
+    }
+}

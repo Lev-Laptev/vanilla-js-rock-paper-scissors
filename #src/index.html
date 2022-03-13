@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <title>Scissors, Paper & Rock</title>
+</head>
+<body>
+    <div class="game">
+        <div class="game__header">
+            <h2 class="game__title">Scissors, Paper & Rock</h2>
+        </div>
+        <div class="game__content">
+            <div class="game__show">
+                <div class="game__player game__player_1">
+                    <img src="./img/icons/hand.png" class="game__animate game__animate_1">
+                    <p>PLAYER 1</p>
+                </div>
+                <div class="game__message">start!</div>
+                <div class="game__player game__player_2">
+                    <img src="./img/icons/hand.png" class="game__animate game__animate_2">
+                    <p>PLAYER 2</p>
+                </div>
+            </div>
+
+            <h3 class="game__subtitle">Choose:</h3>
+            <div class="game__options">
+                <div class="game__option scissors">
+                    <img src="./img/icons/scissors.png" data-id="scissors">
+                    <span>Scissors</span>
+                </div>
+                <div class="game__option paper">
+                    <img src="./img/icons/paper.png" data-id="paper">
+                    <span>Paper</span>
+                </div>
+                <div class="game__option rock">
+                    <img src="./img/icons/rock.png" data-id="rock">
+                    <span>Rock</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
