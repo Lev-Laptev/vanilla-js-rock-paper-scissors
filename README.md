@@ -1,5 +1,7 @@
 # rock-paper-scissors
 
+### View: [Click](https://vanilla-js-rock-paper-scissors.netlify.app/)
+
 ## Table of Contents
 
 - [About](#about)
