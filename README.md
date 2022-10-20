@@ -35,4 +35,4 @@ View: [Click](https://vanilla-js-rock-paper-scissors.netlify.app/)
  ┗ 📜README.md
 ```
 
-[(Back to top)](#-table-of-contents)
+[(Back to top)](#table-of-contents)
